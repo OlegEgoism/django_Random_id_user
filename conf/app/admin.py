@@ -14,3 +14,4 @@ class CustomUserAdmin(admin.ModelAdmin):
 
     def preview(self, obj):
         return mark_safe(f'<img src="{obj.avatar.url}" width="50" height="50">')
+    preview.short_description = 'Аватар'
